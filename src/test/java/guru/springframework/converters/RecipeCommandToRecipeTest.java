@@ -1,15 +1,18 @@
 package guru.springframework.converters;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Before;
+import org.junit.Test;
+
 import guru.springframework.commands.CategoryCommand;
 import guru.springframework.commands.IngredientCommand;
 import guru.springframework.commands.NotesCommand;
 import guru.springframework.commands.RecipeCommand;
 import guru.springframework.domain.Difficulty;
 import guru.springframework.domain.Recipe;
-import org.junit.Before;
-import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class RecipeCommandToRecipeTest {
     public static final Long RECIPE_ID = 1L;
