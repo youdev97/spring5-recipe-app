@@ -13,10 +13,13 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import java.util.HashSet;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import guru.springframework.commands.IngredientCommand;
 import guru.springframework.commands.RecipeCommand;
@@ -38,6 +41,14 @@ public class IngredientControllerTest {
 	IngredientController controller;
 
 	MockMvc mockMvc;
+	
+	@Before
+    public void setUp() throws Exception {
+        MockitoAnnotations.initMocks(this);
+
+        controller = new IngredientController(ingredientService, recipeService, unitOfMeasureService);
+        mockMvc = MockMvcBuilders.standaloneSetup(controller).build();
+    }
 
 	@Test
     public void testListIngredients() throws Exception {
