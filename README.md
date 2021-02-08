@@ -17,3 +17,6 @@ Those points were viewed and implemented
 * Tests Junit, Mock, CI (CircleCI integration)
 * CRUD Operations with Spring MVC
 * Validation and Constraints with Spring MVC
+* Working with Containers and Images (Docker)
+* Connecting to MySQL or MongoDB
+* Reactive Programming
