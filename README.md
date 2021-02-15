@@ -1,10 +1,10 @@
 # Spring Boot Recipe Application
-This repo is a project that I built following one of the most popular course about Spring called [Spring Framework 5: Beginner to Guru](https://www.udemy.com/spring-framework-5-beginner-to-guru/?couponCode=GITHUB_SFGPETCLINIC).
 
-It's simulating a a recipe website where we can manage recipes, instructions, notes, categories, ingredients.
-(CRUD)
+This repo is a Spring MVC project that I built following one of the most popular course about Spring called [Spring Framework 5: Beginner to Guru](https://www.udemy.com/spring-framework-5-beginner-to-guru/?couponCode=GITHUB_SFGPETCLINIC).
 
-Those points were viewed and implemented
+It's simulating a a recipe website where we can manage recipes, instructions, notes, categories, ingredients.(CRUD)
+
+Those points were viewed and implemented:
 
 * Spring initializer
 * H2 Database
@@ -20,3 +20,5 @@ Those points were viewed and implemented
 * Working with Containers and Images (Docker)
 * Connecting to MySQL or MongoDB
 * Reactive Programming
+* RestFul WebService with Spring MVC
+* Swagger
